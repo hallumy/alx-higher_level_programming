@@ -44,7 +44,8 @@ class TestBaseDocs(unittest.TestCase):
         """Tests for the presence of docstrings in all functions"""
         for func in self.base_funcs:
             self.assertTrue(len(func[1].__doc__) >= 1)
-
+	if __name__ == '__main__':
+    		unittest.main()
 
 class TestBase(unittest.TestCase):
     """Tests to check functionality of Base class"""

@@ -50,18 +50,3 @@ class Base:
         else:
             ret_list = list_dictionaries
         return json.dumps(ret_list)
-
-    @staticmethod
-    def to_json_string(list_dictionaries):
-        ''' method json string
-        '''
-        ret_list = []
-        if list_dictionaries is None or len(list_dictionaries) == 0:
-            return "[]"
-
-        if type(list_dictionaries) != list:
-            ret_list.append(list_dictionaries)
-        else:
-            ret_list = list_dictionaries
-        return json.dumps(ret_list)
-
